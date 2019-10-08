@@ -1,0 +1,26 @@
+.main-header {
+    position: relative;
+    z-index: 2;
+}
+
+.main-header__navigation-list {
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    align-items: center;
+}
+
+.main-header__navigation-link {
+
+    a {
+        font-size: 14px;
+        font-weight: 700;
+        color: #000;
+        text-transform: uppercase;
+    }
+}
+
+.main-header__logo {
+    margin-top: 45px;
+    margin-left: 40px;
+}

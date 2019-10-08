@@ -1,0 +1,23 @@
+.promo {
+    position: relative;
+    background: url("../assets/img/back-desktop.jpg") no-repeat;
+    max-width: 100%;
+    height: 520px;
+
+    &::after {
+        position: absolute;
+        bottom: -6px;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 65px;
+        background: url("../assets/img/welcome-triangle.png") no-repeat center;
+    }
+}
+
+.promo__welcome-text {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 78px;
+
+}

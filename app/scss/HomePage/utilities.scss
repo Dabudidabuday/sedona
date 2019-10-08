@@ -1,0 +1,21 @@
+#app {
+    margin: 0 auto;
+    max-width: 1200px;
+    box-shadow: 2px 2px 4px black;
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1040px;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+.reasons__wrapper {
+    display: flex;
+}

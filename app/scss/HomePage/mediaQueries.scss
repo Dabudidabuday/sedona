@@ -1,0 +1,30 @@
+@media screen and (max-width: 1132px) {
+    .main-header__navigation {
+/*         padding: 0 40px; */
+    }
+
+    .main-header__navigation-list {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .main-header__logo {
+        margin-left: 0;
+    }
+
+    .promo {
+        background-position: center;
+
+        &::after {
+        
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+
+}
