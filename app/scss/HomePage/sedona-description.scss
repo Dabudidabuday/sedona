@@ -19,9 +19,13 @@
 
 }
 
+.reasons {
+    width: 100%;
+}
+
 .reasons__description {
     padding: 45px 60px;
-    max-width: 400px;
+    width: 33,5%;
     min-width: 256px;
     max-height: 256px;
     background-color: #81b3d2;
@@ -51,7 +55,12 @@
 }
 
 .reasons__img {
-    max-width: 800px;
+    width: 66,5%;
+
+    img {
+        display: block;
+        width: 100%;
+    }
 }
 
 .recommendations__list {
@@ -75,4 +84,126 @@
         font-size: 21px;
         font-weight: 600;
     }
+}
+
+.reasons--simplified {
+    padding: 50px 55px;
+    max-width: 100%;
+    height: 256px;
+    background-color: #eeeeee;
+}
+
+.reasons--simplified__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .item__title {
+            padding-bottom: 15px;
+            font-size: 21px;
+            text-transform: uppercase;
+        }
+
+        .item__number {
+            padding-bottom: 30px;
+        }
+
+        .item__description {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.call-to-action {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* сразу блоку задам выравнивание текста по центру,не буду делать доп контейнера и его выравнивать, флекс вроде справляется с этим, просто всё по центру и max-width */
+}
+
+.call-to-action__title {
+    padding-bottom: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.call-to-action__description {
+    padding-bottom: 45px;
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.to-search-hotel {
+    padding: 15px 135px;
+    text-transform: uppercase;
+    background-color: #81b3d2;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.map {
+    position: relative;
+}
+.map__img {
+    width: 100%;
+}
+
+.map__marker {
+    position: absolute;
+    top: 48%;
+    right: 49%;
+}
+
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    height: 120px;
+}
+
+.main-footer__hashtag {
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.main-footer__socials-list {
+    max-width: 155px;
+    display: flex;
+
+    .item:not(last-child) {
+        margin-right: 5px;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        background-color: #81b3d2;
+
+        span {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+.typesetter {
+    font-size: 18px;
+    font-weight: 500;
 }
