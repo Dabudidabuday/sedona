@@ -27,18 +27,25 @@ function startBrowserSync () {
   });
 }
 
+// function compileScss () {
+//   return src('app/scss/HomePage/index.scss', { allowEmpty: true })
+//     .pipe(sass().on('error', sass.logError))
+//     .pipe(concat('main.css'))
+//     .pipe(dest('dist'));
+// }
+
 function compileScss () {
-  return src('app/scss/HomePage/index.scss', { allowEmpty: true })
+  return src('app/scss/PhotoPage/index.scss', { allowEmpty: true })
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('main.css'))
     .pipe(dest('dist'));
 }
 
-
 function watchFiles () {
   startBrowserSync();
 
-  watch('index.html').on('change', browserSync.reload);
+  // watch('index.html').on('change', browserSync.reload);
+  watch('photos.html').on('change', browserSync.reload);
 
   watch('app/scss/**/*.scss').on('change', compileScss);
   watch('dist/main.css').on('change', browserSync.reload);
