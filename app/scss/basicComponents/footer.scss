@@ -1,0 +1,40 @@
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    height: 120px;
+}
+
+.main-footer__hashtag {
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.main-footer__socials-list {
+    max-width: 155px;
+    display: flex;
+
+    .item:not(last-child) {
+        margin-right: 5px;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        background-color: #81b3d2;
+
+        span {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+.typesetter {
+    font-size: 18px;
+    font-weight: 500;
+}
