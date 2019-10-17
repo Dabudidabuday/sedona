@@ -19,7 +19,9 @@ function deleteDistFolder () {
 function startBrowserSync () {
   browserSync.init({
     server: {
-      baseDir: './'
+      baseDir: './',
+      index: 'photos.html'
+
     },
     open: true,
     notify: false,
@@ -34,8 +36,15 @@ function startBrowserSync () {
 //     .pipe(dest('dist'));
 // }
 
+// function compileScss () {
+//   return src('app/scss/PhotoPage/index.scss', { allowEmpty: true })
+//     .pipe(sass().on('error', sass.logError))
+//     .pipe(concat('main.css'))
+//     .pipe(dest('dist'));
+// }
+
 function compileScss () {
-  return src('app/scss/PhotoPage/index.scss', { allowEmpty: true })
+  return src('app/scss/FormPage/index.scss', { allowEmpty: true })
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('main.css'))
     .pipe(dest('dist'));
@@ -45,7 +54,8 @@ function watchFiles () {
   startBrowserSync();
 
   // watch('index.html').on('change', browserSync.reload);
-  watch('photos.html').on('change', browserSync.reload);
+  // watch('photos.html').on('change', browserSync.reload);
+  watch('form.html').on('change', browserSync.reload);
 
   watch('app/scss/**/*.scss').on('change', compileScss);
   watch('dist/main.css').on('change', browserSync.reload);
