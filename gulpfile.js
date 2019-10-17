@@ -20,7 +20,7 @@ function startBrowserSync () {
   browserSync.init({
     server: {
       baseDir: './',
-      index: 'photos.html'
+      index: 'form.html'
 
     },
     open: true,
