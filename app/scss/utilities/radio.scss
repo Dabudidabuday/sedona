@@ -1,0 +1,21 @@
+.form__impression {
+    .radio-img {
+        position: absolute;
+        top: -16px;
+        left: -62px;
+        width: 56px;
+        height: 55px;
+        background-color: black;
+        background: url('../../../assets/img/radio-off.png');
+    }
+}
+
+input[type='radio'] {
+    &:checked {
+        & + .radio-img {
+            width: 56px;
+            height: 55px;
+            background: url('../../../assets/img/radio-on.png');
+        }
+    }
+}

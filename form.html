@@ -89,43 +89,57 @@
             <h1 class="review__title">оставьте свой отзыв</h1>
             <p class="review__subtitle">
                 помогите нашим отелям стать лучше! оставьте отзыв о них,<br>
-                а так же о посещенных вами достопримечательностях
+                а также о посещенных вами достопримечательностях
             </p>
             <form action="#" method="post" class="review__form">
                 <fieldset class="form__impression">
                     <legend>ваше общее впечатление</legend>
                     <label>
-                        <input type="radio" name="impression__toggles">
+                        <input type="radio" name="impression__toggles" checked>
+                        <span class='radio-img'></span>
                         Cкорее положительное
                     </label>
 
                     <label>
                         <input type="radio" name="impression__toggles">
+                        <span class='radio-img'></span>
                         Cкорее отрицательное
                     </label>
 
                     <label>
                         <input type="radio" name="impression__toggles">
+                        <span class='radio-img'></span>
                         Затрудняюсь ответить
                     </label>
                 </fieldset>
 
                 <fieldset class="form__introduce">
-                    <legend>представьтесь</legend>
-
+                    <legend>представьтесь:</legend>
                     <label>
-                        имя<sup>*</sup>:
-                        <input type="text" placeholder="Петр">
-                    </label>
-                    <label>
-                        фамилия<sup>*</sup>:
-                        <input type="text" placeholder="Иванов">
-                    </label>
-                    <label>
-                        отчество:
-                        <input type="text" placeholder="Александрович">
+                        <span class="input-name">имя<sup>*</sup>:</span>
+                        <input type="text" placeholder="Петр" size='34'>
                     </label>
 
+                    <label>
+                        <span class="input-name">фамилия<sup>*</sup>:</span>
+                        <input type="text" placeholder="Иванов" size="30">
+                    </label>
+
+                    <label>
+                        <span class="input-name">отчество:</span>
+                        <input type="text" placeholder="Александрович" size="30">
+                    </label>
+                </fieldset>
+
+                <fieldset class="form__contacts">
+                    <legend>контактная информация:</legend>
+                    <label>
+                        <input type="tel">
+                    </label>
+
+                    <label>
+                        <input type="email">
+                    </label>
                 </fieldset>
             </form>
         </section>

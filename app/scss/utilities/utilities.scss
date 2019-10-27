@@ -19,3 +19,7 @@ body {
 .reasons__wrapper {
     display: flex;
 }
+
+input[type='radio'] {
+    visibility: hidden;
+}

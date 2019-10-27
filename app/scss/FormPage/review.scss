@@ -1,21 +1,25 @@
 .review__title {
-    margin-bottom: 35px;
+    margin-bottom: 31px;
     text-align: center;
     font-size: 30px;
+    line-height: 26px;
+    letter-spacing: 0.6px;
     text-transform: uppercase;
 }
 
 .review__subtitle {
-    margin-bottom: 65px;
+    margin-bottom: 58px;
     text-align: center;
     font-size: 14px;
     line-height: 24px;
+    letter-spacing: 0.15px;
     color: #333333;
     text-transform: uppercase;
 }
 
 .review__form {
     display: flex;
+    flex-wrap: wrap;
 
     .form__impression {
         display: flex;
@@ -24,19 +28,28 @@
         border-right: 1px solid #dbdbdb;
 
         legend {
-            margin-bottom: 60px;
-            text-align: center;
+            margin-bottom: 74px;
+            margin-left: 199px;
             font-size: 21px;
             font-weight: 700;
             text-transform: uppercase;
         }
+ // в label jcc не подошел, так как выравнивание текста по центру смещало
+ // на пару пикселей смещало сам текст и слево. Поэтому пришлось
+ // выровнять их по поперечной оси и оттолкнуть левым марджином
+
 
         label {
+            position: relative;
+            margin-left: 185px;
             display: flex;
-            justify-content: center;
+            align-items: flex-start;
+            font-size: 18px;
             font-weight: 700;
 
-
+            &:not(:last-child) {
+                margin-bottom: 55px;
+            }
         }
     }
 
@@ -46,16 +59,49 @@
         border: none;
 
         legend {
-            margin-bottom: 60px;
+            margin-bottom: 56px;
             margin-left: 80px;
             font-size: 21px;
             font-weight: 700;
+            letter-spacing: 0.5px;  // подравнял с помощью этого свойства, однако??
             text-transform: uppercase;
         }
 
          label {
             display: flex;
             margin-left: 80px;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #333333;
+
+            .input-name {
+                line-height: 62px;
+                // vertical-align не работал, поэтому сделал с помощью этого свойства, так он выровнялся, display: tible-cell + va-middle тоже не работал
+
+                &:last-child {
+                    margin-right: 10px;
+                }
+            }
+
+            input[type='text'] {
+                margin-bottom: 20px;
+                margin-left: 13px;
+                padding: 20px 20px;
+                height: 58px;
+                font-family: 'PT Sans', sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                color: #000000;
+                background-color: #f2f2f2;
+                border: none;
+
+            }
         }
     }
+
+    .form__contacts {
+        margin: 0 auto;
+        border: none;
+    }
+
 }
