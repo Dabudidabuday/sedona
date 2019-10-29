@@ -21,6 +21,7 @@
     display: flex;
     flex-wrap: wrap;
 
+
     .form__impression {
         display: flex;
         flex-basis: 600px;
@@ -98,10 +99,4 @@
             }
         }
     }
-
-    .form__contacts {
-        margin: 0 auto;
-        border: none;
-    }
-
 }
